@@ -148,7 +148,7 @@ const app = new Vue({
                     fyc *
                         1.15 *
                         this.xishu1(fyc, this.form.zhiji) *
-                        this.xishu2(this.form.huodonglv) *
+                        this.xishu2(this.form.huodonglv / 100) *
                         100
                 ) / 100
             );
@@ -164,7 +164,7 @@ const app = new Vue({
                         1.15 *
                         1.1 *
                         this.xishu3(fyc, this.form.zhiji) *
-                        this.xishu4(this.huodonglv) *
+                        this.xishu4(this.huodonglv / 100) *
                         100
                 ) / 100
             );

@@ -63,8 +63,9 @@
                                 <div class="weui-cell__bd">
                                     <div class="weui-flex">
                                         <input id="js_input" class="weui-input weui-flex__item" type="number"
-                                            style="text-align: right;" v-model="form.bm6" pattern="[0-9]*" />
-                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">人</div>
+                                            style="text-align: right; padding-right:1em" v-model="form.bm6"
+                                            pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; ">人</div>
                                     </div>
                                 </div>
                             </div>
@@ -74,8 +75,9 @@
                                 <div class="weui-cell__bd">
                                     <div class="weui-flex">
                                         <input id="js_input" class="weui-input weui-flex__item" type="number"
-                                            style="text-align: right;" v-model="form.bm6zx" pattern="[0-9]*" />
-                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">人</div>
+                                            style="text-align: right; padding-right:1em" v-model="form.bm6zx"
+                                            pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; ">人</div>
                                     </div>
                                 </div>
                             </div>
@@ -85,8 +87,9 @@
                                 <div class="weui-cell__bd">
                                     <div class="weui-flex">
                                         <input id="js_input" class="weui-input weui-flex__item" type="number"
-                                            style="text-align: right;" v-model="form.bm36" pattern="[0-9]*" />
-                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">人</div>
+                                            style="text-align: right; padding-right:1em" v-model="form.bm36"
+                                            pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; ">人</div>
                                     </div>
                                 </div>
                             </div>
@@ -96,8 +99,9 @@
                                 <div class="weui-cell__bd">
                                     <div class="weui-flex">
                                         <input id="js_input" class="weui-input weui-flex__item" type="number"
-                                            style="text-align: right;" v-model="form.bm36zx" pattern="[0-9]*" />
-                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">人</div>
+                                            style="text-align: right; padding-right:1em" v-model="form.bm36zx"
+                                            pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; ">人</div>
                                     </div>
                                 </div>
                             </div>
@@ -107,8 +111,9 @@
                                 <div class="weui-cell__bd">
                                     <div class="weui-flex">
                                         <input id="js_input" class="weui-input weui-flex__item" type="number"
-                                            style="text-align: right;" v-model="form.bm3" pattern="[0-9]*" />
-                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">人</div>
+                                            style="text-align: right; padding-right:1em" v-model="form.bm3"
+                                            pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; ">人</div>
                                     </div>
                                 </div>
                             </div>
@@ -118,8 +123,9 @@
                                 <div class="weui-cell__bd">
                                     <div class="weui-flex">
                                         <input id="js_input" class="weui-input weui-flex__item" type="number"
-                                            style="text-align: right;" v-model="form.bm3zx" pattern="[0-9]*" />
-                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">人</div>
+                                            style="text-align: right; padding-right:1em" v-model="form.bm3zx"
+                                            pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; ">人</div>
                                     </div>
                                 </div>
                             </div>
@@ -129,8 +135,9 @@
                                 <div class="weui-cell__bd">
                                     <div class="weui-flex">
                                         <input id="js_input" class="weui-input weui-flex__item" type="number"
-                                            style="text-align: right;" v-model="form.huodonglv" pattern="[0-9]*" />
-                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">%</div>
+                                            style="text-align: right; padding-right:1em" v-model="form.huodonglv"
+                                            pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; ">%</div>
                                     </div>
                                 </div>
                             </div>
@@ -141,10 +148,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="weui-form__opr-area">
-                    <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips"
-                        @click="showResult=true">提交</a>
+                    <div class="weui-form__opr-area">
+                        <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips"
+                            @click="showResult=true">提交</a>
+                    </div>
                 </div>
             </div>
         </div>
