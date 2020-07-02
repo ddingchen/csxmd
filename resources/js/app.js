@@ -144,10 +144,13 @@ const app = new Vue({
                 this.form.bm36zx * this.form.bm36bs +
                 this.form.bm3zx * this.form.bm3bs;
             return (
-                fyc *
-                1.15 *
-                this.xishu1(fyc, this.form.zhiji) *
-                this.xishu2(this.form.huodonglv)
+                Math.round(
+                    fyc *
+                        1.15 *
+                        this.xishu1(fyc, this.form.zhiji) *
+                        this.xishu2(this.form.huodonglv) *
+                        100
+                ) / 100
             );
         },
         jljt() {
@@ -156,11 +159,14 @@ const app = new Vue({
                 this.form.bm36 * this.form.bm36bs +
                 this.form.bm3 * this.form.bm3bs;
             return (
-                fyc *
-                1.15 *
-                1.1 *
-                this.xishu3(fyc, this.form.zhiji) *
-                this.xishu4(this.huodonglv)
+                Math.round(
+                    fyc *
+                        1.15 *
+                        1.1 *
+                        this.xishu3(fyc, this.form.zhiji) *
+                        this.xishu4(this.huodonglv) *
+                        100
+                ) / 100
             );
         },
         gllyhj() {
