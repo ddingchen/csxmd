@@ -23,6 +23,11 @@
             text-align: left;
             font-size: 14px;
         }
+
+        .weui-cells__group_form .wauto {
+            width: auto;
+            max-width: auto;
+        }
     </style>
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
@@ -40,7 +45,8 @@
                         <div class="weui-cells__title">你好，请在方框内按要求输入：</div>
                         <div class="weui-cells weui-cells_form">
                             <div class="weui-cell weui-cell_active">
-                                <div class="weui-cell__hd"><label class="weui-label">您的职级：</label></div>
+                                <div class="weui-cell__hd"><label class="weui-label"
+                                        style="width: auto; max-width: none;">您的职级：</label></div>
                                 <div class="weui-cell__bd">
                                     <select class="weui-select" v-model='form.zhiji'>
                                         <option value="08">08</option>
@@ -52,52 +58,80 @@
                                 </div>
                             </div>
                             <div class="weui-cell weui-cell_active">
-                                <div class="weui-cell__hd"><label class="weui-label">部门6000C以上人力：</label></div>
+                                <div class="weui-cell__hd"><label class="weui-label"
+                                        style="width: auto; max-width: none;">部门6000C以上人力：</label></div>
                                 <div class="weui-cell__bd">
-                                    <input id="js_input" class="weui-input" type="number" v-model="form.bm6"
-                                        pattern="[0-9]*" />
+                                    <div class="weui-flex">
+                                        <input id="js_input" class="weui-input weui-flex__item" type="number"
+                                            style="text-align: right;" v-model="form.bm6" pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">人</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="weui-cell weui-cell_active">
-                                <div class="weui-cell__hd"><label class="weui-label">其中直辖组人力：</label></div>
+                                <div class="weui-cell__hd"><label class="weui-label"
+                                        style="width: auto; max-width: none;">其中直辖组人力：</label></div>
                                 <div class="weui-cell__bd">
-                                    <input id="js_input" class="weui-input" type="number" v-model="form.bm6zx"
-                                        pattern="[0-9]*" />
+                                    <div class="weui-flex">
+                                        <input id="js_input" class="weui-input weui-flex__item" type="number"
+                                            style="text-align: right;" v-model="form.bm6zx" pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">人</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="weui-cell weui-cell_active">
-                                <div class="weui-cell__hd"><label class="weui-label">部门3000C-6000C人力：</label></div>
+                                <div class="weui-cell__hd"><label class="weui-label"
+                                        style="width: auto; max-width: none;">部门3000C-6000C人力：</label></div>
                                 <div class="weui-cell__bd">
-                                    <input id="js_input" class="weui-input" type="number" v-model="form.bm36"
-                                        pattern="[0-9]*" />
+                                    <div class="weui-flex">
+                                        <input id="js_input" class="weui-input weui-flex__item" type="number"
+                                            style="text-align: right;" v-model="form.bm36" pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">人</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="weui-cell weui-cell_active">
-                                <div class="weui-cell__hd"><label class="weui-label">其中直辖组人力：</label></div>
+                                <div class="weui-cell__hd"><label class="weui-label"
+                                        style="width: auto; max-width: none;">其中直辖组人力：</label></div>
                                 <div class="weui-cell__bd">
-                                    <input id="js_input" class="weui-input" type="number" v-model="form.bm36zx"
-                                        pattern="[0-9]*" />
+                                    <div class="weui-flex">
+                                        <input id="js_input" class="weui-input weui-flex__item" type="number"
+                                            style="text-align: right;" v-model="form.bm36zx" pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">人</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="weui-cell weui-cell_active">
-                                <div class="weui-cell__hd"><label class="weui-label">部门3000C以下人力：</label></div>
+                                <div class="weui-cell__hd"><label class="weui-label"
+                                        style="width: auto; max-width: none;">部门3000C以下人力：</label></div>
                                 <div class="weui-cell__bd">
-                                    <input id="js_input" class="weui-input" type="number" v-model="form.bm3"
-                                        pattern="[0-9]*" />
+                                    <div class="weui-flex">
+                                        <input id="js_input" class="weui-input weui-flex__item" type="number"
+                                            style="text-align: right;" v-model="form.bm3" pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">人</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="weui-cell weui-cell_active">
-                                <div class="weui-cell__hd"><label class="weui-label">其中直辖组人力：</label></div>
+                                <div class="weui-cell__hd"><label class="weui-label"
+                                        style="width: auto; max-width: none;">其中直辖组人力：</label></div>
                                 <div class="weui-cell__bd">
-                                    <input id="js_input" class="weui-input" type="number" v-model="form.bm3zx"
-                                        pattern="[0-9]*" />
+                                    <div class="weui-flex">
+                                        <input id="js_input" class="weui-input weui-flex__item" type="number"
+                                            style="text-align: right;" v-model="form.bm3zx" pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">人</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="weui-cell weui-cell_active">
-                                <div class="weui-cell__hd"><label class="weui-label">活动率：</label></div>
+                                <div class="weui-cell__hd"><label class="weui-label"
+                                        style="width: auto; max-width: none;">活动率：</label></div>
                                 <div class="weui-cell__bd">
-                                    <input id="js_input" class="weui-input" type="number" v-model="form.huodonglv"
-                                        pattern="[0-9]*" />
+                                    <div class="weui-flex">
+                                        <input id="js_input" class="weui-input weui-flex__item" type="number"
+                                            style="text-align: right;" v-model="form.huodonglv" pattern="[0-9]*" />
+                                        <div class="weui-flex__item" style="flex: 0; margin-left: 1em">%</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="weui-cells__title">
