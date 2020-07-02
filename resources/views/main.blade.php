@@ -35,12 +35,18 @@
 <body data-weui-theme="light">
     <div id="app">
         <div class="page" v-show="!showResult">
-            <div class="weui-form">
-                <div class="weui-form__text-area">
-                    <h2 class="weui-form__title">创收小马达 测测测</h2>
-                    <div class="weui-form__desc">新法聚薪表</div>
+            <div class="weui-form" style="padding-top: 2em;">
+                <div style="display: flex;">
+                    <div class="weui-form__text-area" style="width: 70%; box-sizing: border-box;">
+                        <h2 class="weui-form__title">创收小马达 测测测</h2>
+                        <div class="weui-form__desc">新法聚薪表</div>
+                    </div>
+                    <div style="width: 30%; overflow: hidden;">
+                        <img src="http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/9.gif"
+                            style="max-width: 5em;" alt="">
+                    </div>
                 </div>
-                <div class="weui-form__control-area">
+                <div class="weui-form__control-area" style="margin-top: 1em;">
                     <div class="weui-cells__group weui-cells__group_form">
                         <div class="weui-cells__title">你好，请在方框内按要求输入：</div>
                         <div class="weui-cells weui-cells_form">
@@ -151,11 +157,6 @@
                     <div class="weui-form__opr-area">
                         <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips"
                             @click="showResult=true">提交</a>
-
-                        <div style="display: flex; justify-content: center">
-                            <img src="http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/9.gif"
-                                style="max-width: 20em;" alt="">
-                        </div>
                     </div>
                 </div>
             </div>
