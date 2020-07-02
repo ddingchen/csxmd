@@ -29,7 +29,6 @@
             max-width: auto;
         }
     </style>
-    <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 
 <body data-weui-theme="light">
@@ -215,6 +214,7 @@
             </div>
         </div>
     </div>
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 
 </html>

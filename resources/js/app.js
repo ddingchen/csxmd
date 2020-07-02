@@ -244,8 +244,6 @@ const app = new Vue({
             }
         },
         xishu4(huodonglv) {
-            console.error(huodonglv, "huodonglv");
-
             if (huodonglv < 0.55) {
                 return 0.8;
             } else if (huodonglv < 0.6) {
