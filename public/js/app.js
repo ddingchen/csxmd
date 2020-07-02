@@ -49712,10 +49712,10 @@ var app = new Vue({
       bm6bs: 10000,
       bm36: 0,
       bm36zx: 0,
-      bm36bs: 4100,
+      bm36bs: 4500,
       bm3: 0,
       bm3zx: 0,
-      bm3bs: 1500,
+      bm3bs: 2000,
       huodonglv: 0
     },
     xishu1Map: {
@@ -49725,6 +49725,34 @@ var app = new Vue({
         "10": 0.07,
         D1: 0.07,
         D2: 0.07
+      },
+      "7000": {
+        "08": 0.11,
+        "09": 0.11,
+        "10": 0.11,
+        D1: 0.11,
+        D2: 0.11
+      },
+      "15000": {
+        "08": 0.15,
+        "09": 0.15,
+        "10": 0.15,
+        D1: 0.15,
+        D2: 0.15
+      },
+      "30000": {
+        "08": 0.19,
+        "09": 0.19,
+        "10": 0.19,
+        D1: 0.19,
+        D2: 0.19
+      },
+      "50000": {
+        "08": 0.22,
+        "09": 0.22,
+        "10": 0.22,
+        D1: 0.22,
+        D2: 0.22
       },
       max: {
         "08": 0.25,
@@ -49741,6 +49769,34 @@ var app = new Vue({
         "10": 0.025,
         D1: 0.025,
         D2: 0.025
+      },
+      "6300": {
+        "08": 0.025,
+        "09": 0.03,
+        "10": 0.035,
+        D1: 0.035,
+        D2: 0.035
+      },
+      "110000": {
+        "08": 0.03,
+        "09": 0.035,
+        "10": 0.04,
+        D1: 0.04,
+        D2: 0.04
+      },
+      "200000": {
+        "08": 0.035,
+        "09": 0.04,
+        "10": 0.045,
+        D1: 0.045,
+        D2: 0.045
+      },
+      "300000": {
+        "08": 0.04,
+        "09": 0.045,
+        "10": 0.05,
+        D1: 0.05,
+        D2: 0.05
       },
       max: {
         "08": 0.045,
@@ -49769,6 +49825,14 @@ var app = new Vue({
     xishu1: function xishu1(fyc, zhiji) {
       if (fyc < 4200) {
         return this.xishu1Map["4200"][zhiji];
+      } else if (fyc < 7000) {
+        return this.xishu1Map["7000"][zhiji];
+      } else if (fyc < 15000) {
+        return this.xishu1Map["15000"][zhiji];
+      } else if (fyc < 30000) {
+        return this.xishu1Map["30000"][zhiji];
+      } else if (fyc < 50000) {
+        return this.xishu1Map["50000"][zhiji];
       } else {
         return this.xishu1Map["max"][zhiji];
       }
@@ -49776,6 +49840,10 @@ var app = new Vue({
     xishu2: function xishu2(huodonglv) {
       if (huodonglv < 0.65) {
         return 1;
+      } else if (huodonglv < 0.7) {
+        return 1.1;
+      } else if (huodonglv < 0.75) {
+        return 1.15;
       } else {
         return 1.2;
       }
@@ -49783,6 +49851,14 @@ var app = new Vue({
     xishu3: function xishu3(fyc, zhiji) {
       if (fyc < 50400) {
         return this.xishu3Map["50400"][zhiji];
+      } else if (fyc < 63000) {
+        return this.xishu3Map["63000"][zhiji];
+      } else if (fyc < 110000) {
+        return this.xishu3Map["110000"][zhiji];
+      } else if (fyc < 200000) {
+        return this.xishu3Map["200000"][zhiji];
+      } else if (fyc < 300000) {
+        return this.xishu3Map["300000"][zhiji];
       } else {
         return this.xishu3Map["max"][zhiji];
       }
@@ -49790,6 +49866,14 @@ var app = new Vue({
     xishu4: function xishu4(huodonglv) {
       if (huodonglv < 0.55) {
         return 0.8;
+      } else if (huodonglv < 0.6) {
+        return 0.9;
+      } else if (huodonglv < 0.65) {
+        return 0.95;
+      } else if (huodonglv < 0.7) {
+        return 1;
+      } else if (huodonglv < 0.75) {
+        return 1.1;
       } else {
         return 1.2;
       }
