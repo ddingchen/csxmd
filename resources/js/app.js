@@ -138,6 +138,10 @@ const app = new Vue({
     },
     mounted() {},
     computed: {
+        endImg() {
+            const id = Math.round(Math.random() * 10) % 5;
+            return `http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/${id}.gif`;
+        },
         gljt() {
             const fyc =
                 this.form.bm6zx * this.form.bm6bs +

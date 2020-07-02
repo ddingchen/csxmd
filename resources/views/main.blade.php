@@ -151,6 +151,11 @@
                     <div class="weui-form__opr-area">
                         <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips"
                             @click="showResult=true">提交</a>
+
+                        <div style="display: flex; justify-content: center">
+                            <img src="http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/9.gif"
+                                style="max-width: 20em;" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,6 +184,9 @@
                         </div>
                         <div class="weui-cell__ft">￥ <span v-text="gllyhj"></span></div>
                     </div>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img :src="endImg" alt="" style="max-width: 20em;">
                 </div>
                 <a class="weui-btn weui-btn_default" style="margin-top: 2em" href="javascript:"
                     @click="showResult=false">返回</a>
