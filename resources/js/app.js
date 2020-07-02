@@ -169,7 +169,7 @@ const app = new Vue({
                 this.form.bm3 * this.form.bm3bs;
             return `计算过程：${fyc}*1.15*1.1*${this.perc(
                 this.xishu3(fyc, this.form.zhiji)
-            )}*${this.perc(this.xishu4(this.huodonglv / 100))}`;
+            )}*${this.perc(this.xishu4(this.form.huodonglv / 100))}`;
         },
         jljt() {
             const fyc =
@@ -182,13 +182,16 @@ const app = new Vue({
                         1.15 *
                         1.1 *
                         this.xishu3(fyc, this.form.zhiji) *
-                        this.xishu4(this.huodonglv / 100) *
+                        this.xishu4(this.form.huodonglv / 100) *
                         100
                 ) / 100
             );
         },
         gllyhj() {
             return this.gljt + this.jljt;
+        },
+        gllyhjn() {
+            return Math.round(this.gllyhj * 12 * 100) / 100;
         }
     },
     methods: {
@@ -241,6 +244,8 @@ const app = new Vue({
             }
         },
         xishu4(huodonglv) {
+            console.error(huodonglv, "huodonglv");
+
             if (huodonglv < 0.55) {
                 return 0.8;
             } else if (huodonglv < 0.6) {

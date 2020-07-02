@@ -202,14 +202,16 @@
                         <div class="weui-cell__bd">
                             <p>管理利益合计（年）：</p>
                         </div>
-                        <div class="weui-cell__ft">￥ <span v-text="gllyhj * 12"></span></div>
+                        <div class="weui-cell__ft">￥ <span v-text="gllyhjn"></span></div>
                     </div>
                 </div>
                 <div style="display: flex; justify-content: center;">
                     <img :src="endImg()" alt="" style="max-width: 20em;">
                 </div>
-                <a class="weui-btn weui-btn_default" style="margin-top: 2em" href="javascript:"
-                    @click="showResult=false">返回</a>
+                <div class="weui-form__opr-area">
+                    <a class="weui-btn weui-btn_default" style="margin-top: 2em" href="javascript:"
+                        @click="showResult=false">返回</a>
+                </div>
             </div>
         </div>
     </div>
