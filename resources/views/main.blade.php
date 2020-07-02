@@ -38,13 +38,13 @@
             <div class="weui-form" style="padding-top: 0;">
                 <div style="display: flex;">
                     <div class="weui-form__text-area"
-                        style="width: 70%; box-sizing: border-box; padding-top: 2em; padding-right: 0">
+                        style="width: 60%; box-sizing: border-box; padding-top: 2em; padding-right: 0">
                         <h2 class="weui-form__title">创收小马达 测测测</h2>
                         <div class="weui-form__desc">新法聚薪表</div>
                     </div>
-                    <div style="width: 30%; overflow: hidden;">
+                    <div style="width: 40%; overflow: hidden;">
                         <img src="http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/9.gif"
-                            style="max-width: 8em;" alt="">
+                            style="max-width: 10em;" alt="">
                     </div>
                 </div>
                 <div class="weui-form__control-area" style="margin-top: 0;">
