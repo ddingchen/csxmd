@@ -138,6 +138,15 @@ const app = new Vue({
     },
     mounted() {},
     computed: {
+        gljt_gc() {
+            const fyc =
+                this.form.bm6zx * this.form.bm6bs +
+                this.form.bm36zx * this.form.bm36bs +
+                this.form.bm3zx * this.form.bm3bs;
+            return `计算过程：${fyc}*1.15*${this.perc(
+                this.xishu1(fyc, this.form.zhiji)
+            )}*${this.perc(this.xishu2(this.form.huodonglv / 100))}`;
+        },
         gljt() {
             const fyc =
                 this.form.bm6zx * this.form.bm6bs +
@@ -152,6 +161,15 @@ const app = new Vue({
                         100
                 ) / 100
             );
+        },
+        jljt_gc() {
+            const fyc =
+                this.form.bm6 * this.form.bm6bs +
+                this.form.bm36 * this.form.bm36bs +
+                this.form.bm3 * this.form.bm3bs;
+            return `计算过程：${fyc}*1.15*1.1*${this.perc(
+                this.xishu3(fyc, this.form.zhiji)
+            )}*${this.perc(this.xishu4(this.huodonglv / 100))}`;
         },
         jljt() {
             const fyc =
@@ -174,6 +192,9 @@ const app = new Vue({
         }
     },
     methods: {
+        perc(num) {
+            return Math.round(num * 100 * 100) / 100 + "%";
+        },
         endImg() {
             const id = Math.round(Math.random() * 10) % 5;
             return `http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/${id}.gif`;

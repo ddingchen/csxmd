@@ -174,17 +174,27 @@
                         </div>
                         <div class="weui-cell__ft">￥ <span v-text="gljt"></span></div>
                     </div>
+                    <div class="weui-cells__title" v-text="gljt_gc" style="margin-top: 0em; margin-bottom: 1em"></div>
+
                     <div class="weui-cell">
                         <div class="weui-cell__bd">
                             <p>经理津贴：</p>
                         </div>
                         <div class="weui-cell__ft">￥ <span v-text="jljt"></span></div>
                     </div>
+                    <div class="weui-cells__title" v-text="jljt_gc" style="margin-top: 0em; margin-bottom: 1em"></div>
+
                     <div class="weui-cell">
                         <div class="weui-cell__bd">
-                            <p>管理利益合计：</p>
+                            <p>管理利益合计（月）：</p>
                         </div>
                         <div class="weui-cell__ft">￥ <span v-text="gllyhj"></span></div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>管理利益合计（年）：</p>
+                        </div>
+                        <div class="weui-cell__ft">￥ <span v-text="gllyhj * 12"></span></div>
                     </div>
                 </div>
                 <div style="display: flex; justify-content: center;">
