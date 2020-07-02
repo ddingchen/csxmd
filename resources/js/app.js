@@ -188,7 +188,7 @@ const app = new Vue({
             );
         },
         gllyhj() {
-            return this.gljt + this.jljt;
+            return Math.round(this.gljt + this.jljt * 100) / 100;
         },
         gllyhjn() {
             return Math.round(this.gllyhj * 12 * 100) / 100;
@@ -199,7 +199,7 @@ const app = new Vue({
             return Math.round(num * 100 * 100) / 100 + "%";
         },
         endImg() {
-            const id = Math.round(Math.random() * 10) % 5;
+            const id = Math.round(Math.random() * 10) % 4;
             return `http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/${id}.gif`;
         },
         xishu1(fyc, zhiji) {
