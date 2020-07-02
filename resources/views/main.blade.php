@@ -36,26 +36,34 @@
     <div id="app">
         <div class="page" v-show="!showResult">
             <div class="weui-form" style="padding-top: 0;">
-                <div style="display: flex;">
+                <div style="display: flex; align-items: center; padding-top: .5em;">
                     <div class="weui-form__text-area"
-                        style="width: 60%; box-sizing: border-box; padding-top: 2em; padding-right: 0">
-                        <h2 class="weui-form__title">创收小马达 测测测</h2>
-                        <div class="weui-form__desc">新法聚薪表</div>
+                        style="width: 60%; box-sizing: border-box; padding-top: 0; padding-right: 0">
+                        <h2 class="weui-form__title" style="color: #C23D3A">当霸业真的来临</h2>
+                        <div class="weui-form__desc" style="color: #C23D3A">新法测算表</div>
+                        <div class="weui-form__desc" style="font-size: 0.5em; display:flex">
+                            <div>
+                                说明：
+                            </div>
+                            <div style="text-align: left">1、新法版本以最终下发版本为准<br />2、以下测算仅供参考<br />3、在下方框内按要求输入</div>
+                        </div>
                     </div>
-                    <div style="width: 40%; overflow: hidden;">
+                    <div
+                        style="width: 40%; overflow: hidden; display: flex; justify-content: center; align-items: center;">
                         <img src="http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/9.gif"
-                            style="max-width: 10em;" alt="">
+                            style="max-width: 9em;" alt="">
                     </div>
                 </div>
                 <div class="weui-form__control-area" style="margin-top: 0;">
                     <div class="weui-cells__group weui-cells__group_form">
-                        <div class="weui-cells__title">你好，请在方框内按要求输入：</div>
+                        {{-- <div class="weui-cells__title">你好，请在方框内按要求输入：</div> --}}
                         <div class="weui-cells weui-cells_form">
                             <div class="weui-cell weui-cell_active">
                                 <div class="weui-cell__hd"><label class="weui-label"
                                         style="width: auto; max-width: none;">您的职级：</label></div>
                                 <div class="weui-cell__bd">
-                                    <select class="weui-select" v-model='form.zhiji'>
+                                    <select class="weui-select" style="height: auto; line-height: normal"
+                                        v-model='form.zhiji'>
                                         <option value="08">08</option>
                                         <option value="09">09</option>
                                         <option value="10">10</option>
@@ -147,11 +155,6 @@
                                         <div class="weui-flex__item" style="flex: 0; ">%</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="weui-cells__title">
-                                温馨提示：<br />
-                                1、本程序仅适用于平安寿险无锡中心支公司代理人在新法下的管理收入测算；<br />
-                                2、运算过程中的人均FYC为20年1-6月各档位FYC的均值。
                             </div>
                         </div>
                     </div>
