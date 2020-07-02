@@ -35,7 +35,7 @@
 <body data-weui-theme="light">
     <div id="app">
         <div class="page" v-show="!showResult">
-            <div class="weui-form" style="padding-top: 2em;">
+            <div class="weui-form" style="padding-top: 0;">
                 <div style="display: flex;">
                     <div class="weui-form__text-area" style="width: 70%; box-sizing: border-box;">
                         <h2 class="weui-form__title">创收小马达 测测测</h2>
@@ -46,7 +46,7 @@
                             style="max-width: 5em;" alt="">
                     </div>
                 </div>
-                <div class="weui-form__control-area" style="margin-top: 1em;">
+                <div class="weui-form__control-area" style="margin-top: 0;">
                     <div class="weui-cells__group weui-cells__group_form">
                         <div class="weui-cells__title">你好，请在方框内按要求输入：</div>
                         <div class="weui-cells weui-cells_form">
@@ -187,7 +187,7 @@
                     </div>
                 </div>
                 <div style="display: flex; justify-content: center;">
-                    <img :src="endImg" alt="" style="max-width: 20em;">
+                    <img :src="endImg()" alt="" style="max-width: 20em;">
                 </div>
                 <a class="weui-btn weui-btn_default" style="margin-top: 2em" href="javascript:"
                     @click="showResult=false">返回</a>

@@ -138,10 +138,6 @@ const app = new Vue({
     },
     mounted() {},
     computed: {
-        endImg() {
-            const id = Math.round(Math.random() * 10) % 5;
-            return `http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/${id}.gif`;
-        },
         gljt() {
             const fyc =
                 this.form.bm6zx * this.form.bm6bs +
@@ -178,6 +174,10 @@ const app = new Vue({
         }
     },
     methods: {
+        endImg() {
+            const id = Math.round(Math.random() * 10) % 5;
+            return `http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/${id}.gif`;
+        },
         xishu1(fyc, zhiji) {
             if (fyc < 4200) {
                 return this.xishu1Map["4200"][zhiji];

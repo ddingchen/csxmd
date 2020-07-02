@@ -49809,10 +49809,6 @@ var app = new Vue({
   },
   mounted: function mounted() {},
   computed: {
-    endImg: function endImg() {
-      var id = Math.round(Math.random() * 10) % 5;
-      return "http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/".concat(id, ".gif");
-    },
     gljt: function gljt() {
       var fyc = this.form.bm6zx * this.form.bm6bs + this.form.bm36zx * this.form.bm36bs + this.form.bm3zx * this.form.bm3bs;
       return Math.round(fyc * 1.15 * this.xishu1(fyc, this.form.zhiji) * this.xishu2(this.form.huodonglv / 100) * 100) / 100;
@@ -49826,6 +49822,10 @@ var app = new Vue({
     }
   },
   methods: {
+    endImg: function endImg() {
+      var id = Math.round(Math.random() * 10) % 5;
+      return "http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/".concat(id, ".gif");
+    },
     xishu1: function xishu1(fyc, zhiji) {
       if (fyc < 4200) {
         return this.xishu1Map["4200"][zhiji];
