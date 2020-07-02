@@ -168,6 +168,7 @@
         <div class="page" v-show="showResult">
             <div class="page__hd">
                 <h1 class="page__title">您的管理收入测算结果：</h1>
+                <p class="page__desc">注：以下测算仅供参考</p>
             </div>
             <div class="page__bd">
                 <div class="weui-cells">
@@ -177,7 +178,9 @@
                         </div>
                         <div class="weui-cell__ft">￥ <span v-text="gljt"></span></div>
                     </div>
-                    <div class="weui-cells__title" v-text="gljt_gc" style="margin-top: 0em; margin-bottom: 1em"></div>
+                    <div class="weui-cells__title" v-text="gljt_gc" style="margin-top: 0em;"></div>
+                    <div class="weui-cells__title" style="margin-top: 0em; margin-bottom: 1em">
+                        公式：组C*继续率系数*组C对应档位系数*活动率系数</div>
 
                     <div class="weui-cell">
                         <div class="weui-cell__bd">
@@ -185,7 +188,9 @@
                         </div>
                         <div class="weui-cell__ft">￥ <span v-text="jljt"></span></div>
                     </div>
-                    <div class="weui-cells__title" v-text="jljt_gc" style="margin-top: 0em; margin-bottom: 1em"></div>
+                    <div class="weui-cells__title" v-text="jljt_gc" style="margin-top: 0em;"></div>
+                    <div class="weui-cells__title" style="margin-top: 0em; margin-bottom: 1em">
+                        公式：部C*标准人力系数*新人占比系数*部C对应档位系数*活动率系数</div>
 
                     <div class="weui-cell">
                         <div class="weui-cell__bd">
