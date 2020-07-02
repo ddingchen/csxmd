@@ -40,11 +40,9 @@
                         style="width: 60%; box-sizing: border-box; padding-top: 0; padding-right: 0">
                         <h2 class="weui-form__title" style="color: #C23D3A">当霸业真的来临</h2>
                         <div class="weui-form__desc" style="color: #C23D3A">新法测算表</div>
-                        <div class="weui-form__desc" style="font-size: 0.8em; display:flex">
-                            <div style="min-width: 3em;">
-                                说明：
+                        <div class="weui-form__desc" style="font-size: 0.8em;">
+                            <div style="text-align: left">说明：<br />1、新法版本以最终下发版本为准<br />2、以下测算仅供参考<br />3、在下方框内按要求输入
                             </div>
-                            <div style="text-align: left">1、新法版本以最终下发版本为准<br />2、以下测算仅供参考<br />3、在下方框内按要求输入</div>
                         </div>
                     </div>
                     <div
