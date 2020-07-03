@@ -188,7 +188,7 @@ const app = new Vue({
             );
         },
         gllyhj() {
-            return Math.round(this.gljt + this.jljt * 100) / 100;
+            return Math.round((this.gljt + this.jljt) * 100) / 100;
         },
         gllyhjn() {
             return Math.round(this.gllyhj * 12 * 100) / 100;
