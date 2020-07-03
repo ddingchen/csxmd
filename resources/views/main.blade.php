@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <title>当霸业真的来临-新法测算表</title>
+    <title>当霸业真的来临-创收小马达</title>
     <!-- 引入 WeUI CDN 链接 -->
     <link rel="stylesheet" href="http://mobilecctokshow.oss-cn-qingdao.aliyuncs.com/SunHouse/Temp/weui.min.css" />
     <style>
